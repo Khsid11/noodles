@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-all">
+        <h1>BTS Music Player</h1>
+        <div class="container-figureMessage">
+            <div class="album-cover">
+                <img id="album-image" src="images/1.jpeg" alt="Album Cover">
+            </div>
+            <!-- <div class="song-info">
+                <h2 id="song-title">Song Title</h2>
+                <p id="song-album">Album Name</p>
+            </div> -->
+        </div>
+        <div class="controls">
+            <audio id="audio-player" controls autoplay>
+                Your browser does not support the audio element.
+            </audio>
+            <div class="extra-controls">
+                <!-- <button id="playback-rate-slower">Slower</button>
+                <button id="playback-rate-normal">Normal</button>
+                <button id="playback-rate-faster">Faster</button> -->
+                <input type="range" id="volume-control" min="0" max="1" step="0.01" value="1">
+                <input type="range" id="seek-control" min="0" value="0">
+            </div>
+            <div class="playlist">
+                <h3>Playlist</h3>
+                <ul class="list" id="playlist">
+                    <!-- Songs will be dynamically added here -->
+                </ul>
+            </div>
+        </div>
+        <div class="footer-container">
+            <p class="footer-line">Made For Noodles Fans </span> by No one</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
